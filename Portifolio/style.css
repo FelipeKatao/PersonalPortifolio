@@ -1,0 +1,54 @@
+.bannerstyle{
+    width: 100%;
+    height: 60vh;
+    background: rgb(96,96,96);
+    background: linear-gradient(176deg, rgba(96,96,96,1) 0%, rgba(0,0,0,1) 100%);
+}
+.dark{
+    width: 100%;
+    height: 60vh;
+    background-color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    transition: 1s;
+}
+.bannerstyle img{
+    float: right;
+}
+
+.article-banner{
+    position: absolute;
+    height: 40vh;
+    width: 30vh;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    color: #fff;
+}
+.navbar_color{
+    color: #fff;
+}
+
+.art{
+    background: rgb(96,96,96);
+    background: linear-gradient(176deg, rgba(96,96,96,1) 0%, rgba(0,0,0,1) 100%);
+    color: #FFF;
+    border-radius: 2vh;
+    margin-top: 4vh;
+    padding: 2vh;
+    margin-left: 4vh;
+
+}
+.card{
+    margin-top: 4VH;
+    margin-left: 6VH;
+    padding: 4vh;
+    margin-bottom: 4vh;
+    background-color: #242424;
+    color: whitesmoke;
+    
+}
+
+#articles_base{
+    display: flex;
+    
+}
