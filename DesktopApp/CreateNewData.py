@@ -56,9 +56,9 @@ def createNewData(page,nameCol,themeCol):
         root = XML.Element(nameCol.get())
         doc = XML.SubElement(root,"NomeBase")
         XML.SubElement(doc,"Database",name=themeCol.get()).text = " Coleção sem corpo"
-
         tree = XML.ElementTree(root)
         tree.write("./MyBox/UserBase.xml")
+     
         page.destroy()
     
     pass
