@@ -18,7 +18,8 @@ def ConfigOpt(master):
     configTheme.ReadThemesInSystem()
     Opt = []
     for values in configTheme.ThemeClass:
-        Opt.append(values)
+        if values not in Opt:
+            Opt.append(values)
 
     #Conteudo da Pagina
     frame_page = Frame(newData)
@@ -42,7 +43,7 @@ def ConfigOpt(master):
 
 
     clicked= StringVar()
-    clicked.set( "HelloFire" )
+    clicked.set( configTheme.GetCurrentTheme())
     #Create an instance of Menu in the frame
     main_menu = OptionMenu(frame_page, clicked, *Opt)
     main_menu.pack()
@@ -67,5 +68,6 @@ def Saveoptions(page,configuretheme):
     configTheme = Config()
     print(configuretheme)
     configTheme.ModifyTheme(configuretheme)
+    messagebox.showinfo("MyNotes","para ver suas configurações aplicadas no seu MyNote feche e abra novamente o MyNotes.")
     page.destroy()
     pass

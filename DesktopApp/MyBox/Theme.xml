@@ -1,4 +1,4 @@
-<Theme name="HelloFire">
+<Theme name="BasicColor">
 <BasicColor Theme="Normal"> 
     <ThemeConfig color="#ffffff" background="#6c1e7b" SecondColor="#e0aaea" />
 </BasicColor>

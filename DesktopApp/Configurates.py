@@ -14,6 +14,12 @@ class Config:
         for child in root.findall("./"+ThemeDefault["name"]+"/ThemeConfig"):
             self.ColorClass.append(child.attrib)
         return self.ColorClass
+
+    def GetCurrentTheme(self):
+        tree = ET.parse('./MyBox/Theme.xml')
+        root = tree.getroot()
+        ThemeDefault = root.attrib
+        return ThemeDefault["name"]
      
     def ReadThemesInSystem(self):
         tree = ET.parse('./MyBox/Theme.xml')
