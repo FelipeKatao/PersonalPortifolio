@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Theme name="BasicColor">
+<BasicColor Theme="Normal"> 
+    <ThemeConfig color="#ffffff" background="#6c1e7b" SecondColor="#e0aaea"></ThemeConfig>
+</BasicColor>
+
+<HelloFire>
+    <ThemeConfig color="#630202" background="#fdc6c6" SecondColor="#630202"></ThemeConfig>
+</HelloFire>
+
+</Theme>

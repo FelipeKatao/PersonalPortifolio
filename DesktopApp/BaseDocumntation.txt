@@ -1,0 +1,68 @@
+# import tkinter module
+from tkinter import * 
+from tkinter.ttk import *
+ 
+# creating main tkinter window/toplevel
+master = Tk()
+master.iconbitmap("2115955.ico")
+ 
+# this will create a label widget
+l1 = Label(master, text = "First:")
+l2 = Label(master, text = "Second:",background="yellow",foreground="white")
+l4 = Label(master, text="Teste")
+l5 = Canvas(master,background="red")
+line = l5.create_line(108, 120,
+                     320, 40,
+                     fill="green")
+# grid method to arrange labels in respective
+# rows and columns as specified
+l1.grid(row = 0, column = 0, sticky = W, pady = 2)
+l2.grid(row = 1, column = 0, sticky = W, pady = 2)
+l4.grid(row = 4, column = 6, sticky = W, pady = 2,padx=9)
+l5.grid(row=5,column=4,sticky=W)
+ 
+# entry widgets, used to take entry from user
+e1 = Entry(master)
+e2 = Entry(master)
+ 
+# this will arrange entry widgets
+e1.grid(row = 0, column = 1, pady = 2)
+e2.grid(row = 1, column = 1, pady = 2)
+ 
+#Create a Label
+label=Label(master, text="This is a Centered Text",font=('Aerial 15 bold'))
+label.grid(row=2, column=0)
+label.grid_rowconfigure(1, weight=1)
+label.grid_columnconfigure(1, weight=1)
+
+# infinite loop which can be terminated by keyboard
+# or mouse interrupt
+master.geometry("300x300")
+master.state('zoomed')
+mainloop()
+
+
+====================================================
+
+List of HTML Tags supports in tkhtmlview:
+
+a
+b
+br
+code
+div
+em
+h1, h2, h3, h4, h5, h6
+i
+img
+li, ul, ol
+mark
+p
+pre
+span
+strong
+u
+
+https://docs.python.org/3/library/tkinter.ttk.html#ttk-styling
+
+https://www.studytonight.com/python-howtos/how-to-read-xml-file-in-python#:~:text=Example%20Read%20XML%20File%20in%20Python.%20To%20read,display%20the%20parent%20tag%20of%20the%20XML%20file.
