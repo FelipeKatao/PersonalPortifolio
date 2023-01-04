@@ -55,7 +55,7 @@ Bt_newCol.pack(side="left")
 Bt_updateCol.pack(side="left")
 Bt_Config.pack(side="left")
 l1.configure(bg=conf.ColorClass[0]["background"])
-l1.pack(fill="both", expand=True)
+l1.pack(fill="both", expand=True,padx=400,pady=50)
 
 #Fim do conteudo da Pagina
 
