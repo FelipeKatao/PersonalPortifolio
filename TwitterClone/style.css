@@ -1,0 +1,44 @@
+#content{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    float: left;
+    position: fixed;
+
+    text-align: left;
+}
+
+
+nav ul li{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   list-style: none;
+   margin-top: 4vh;
+   padding-top: 10vh;
+   text-align: right;
+}
+
+#loop{
+    position: relative;
+    margin-left: 18vh;
+    height: 110vh;
+    width: 130vh;
+}
+
+#hotTags{
+    position: fixed;
+    height: 90vh;
+    width: 40vh;
+
+    float: left;
+    margin-top: -110vh;
+    margin-left: 150vh;
+}
+
+article{
+    background-color: #ccc;
+    width: 96%;
+    padding: 1vh;
+    margin: auto;
+    margin-top: 4vh;
+}

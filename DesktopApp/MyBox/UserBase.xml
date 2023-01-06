@@ -1,2 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<Python><NomeBase><Database name="Dev">&lt;h3&gt;TESTE&lt;/h3&gt;</Database></NomeBase></Python>
+<database inicial="inicial">
+    <nootbook  name = "inicial">
+        <titulo>Titulo do seu Nootbook</titulo>
+        <subtitulo>Modifique o seu nootbook</subtitulo>
+        <tasks>Lembrar de estudar JavaScript</tasks>
+        <tasks>Estudar frameworks Python</tasks>
+        <tasks>Entregar o Projeto para o site.</tasks>
+    </nootbook>
+</database>
