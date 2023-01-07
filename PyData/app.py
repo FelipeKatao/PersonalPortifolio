@@ -9,6 +9,8 @@ Cargos = pd.read_csv(R"D:\Pessoal\CataoChanel\Tutos\PyData\DataBase\Cargos.csv")
 #print(ps.sqldf(sqlQUery,locals()))
 
 SqlQuery = dsql.DataPySql()
-SqlQuery.ExecAllQuery("PyData\sql\View_usuarios.sql",0)
-print(SqlQuery.ReadQuerySpecific("PyData\sql\View_usuarios.sql",2))
+Qr = SqlQuery.ExecAllQuery("PyData\sql\View_usuarios.sql")
+for line in Qr:
+    print(ps.sqldf(line,locals()))
+
 
