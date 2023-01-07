@@ -1,7 +1,7 @@
 Usuario,IdUsuario,Acessos,Modulo
-Katarine,43,7,PAGAMENTO
-Joao,345,6,TODOS
-Marcela,323,6,ADM
-Lucas,12,6,PAGAMENTO
-Michel,34,1,VENDAS
-Andre,42,4,TODOS
+Katarine,43,0,PAGAMENTO
+Joao,345,0,TODOS
+Marcela,323,0,ADM
+Lucas,12,0,PAGAMENTO
+Michel,34,0,VENDAS
+Andre,42,0,TODOS
