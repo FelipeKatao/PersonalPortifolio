@@ -15,7 +15,7 @@ dataAppend = {
 }
 df = pd.DataFrame(dataAppend)
 df.to_csv(R"D:\Pessoal\CataoChanel\Tutos\PyData\DataBase\usuarios.csv",mode='a',index=False,header=False)
-
+ 
 
 #UPDATE 
 
