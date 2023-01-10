@@ -17,7 +17,7 @@ class DataPySql():
             
             if("UPDATE" in query):
                 self.UpdateQuery(query)
-            else:
+            else: 
                 Querys.append(query)
         return Querys
 
