@@ -16,7 +16,12 @@ class DataPySql():
         for query in file_query.readlines():
             
             if("UPDATE" in query):
-                print("UPDATE HERE")
+                self.UpdateQuery(query)
             else:
                 Querys.append(query)
         return Querys
+
+    def UpdateQuery(self,query):
+        query = query.replace("UPDATE","").replace("SET",",").replace("=",",").replace("WHERE",",[")+"]"
+        query_list = query.split(',')
+        return query_list
