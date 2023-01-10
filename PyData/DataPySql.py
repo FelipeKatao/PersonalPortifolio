@@ -14,5 +14,9 @@ class DataPySql():
         file_query =open(file,"r")
         Querys= []
         for query in file_query.readlines():
-            Querys.append(query)
+            
+            if("UPDATE" in query):
+                print("UPDATE HERE")
+            else:
+                Querys.append(query)
         return Querys
