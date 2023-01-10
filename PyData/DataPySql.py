@@ -22,6 +22,6 @@ class DataPySql():
         return Querys
 
     def UpdateQuery(self,query):
-        query = query.replace("UPDATE","").replace("SET",",").replace("=",",").replace("WHERE",",[")+"]"
+        query = query.replace("UPDATE","").replace("SET",",").replace("=",",").replace("WHERE",",[").replace("AND","],[")+"]"
         query_list = query.split(',')
         return query_list
