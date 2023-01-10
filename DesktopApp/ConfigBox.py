@@ -19,7 +19,7 @@ def ConfigOpt(master):
     Opt = []
     for values in configTheme.ThemeClass:
         if values not in Opt:
-            Opt.append(values) 
+            Opt.append(values)  
 
     #Conteudo da Pagina
     frame_page = Frame(newData)
